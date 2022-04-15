@@ -1,6 +1,6 @@
 .header {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
 }
 
@@ -9,7 +9,7 @@
 	background: url("../../assets/pseudoElement.png") no-repeat;
 	position: absolute;
 	/* opacity: 0.3; */
-	/* background-size: min(5rem, 70%); */
+	background-size: contain;
 	top: 11.73%;
 	left: 0.12%;
 	right: 94.9%;
@@ -29,7 +29,6 @@
 
 .header__section {
 	flex: 0.4;
-	height: 50vh;
 }
 
 .header__image {
@@ -41,17 +40,30 @@
 	height: 100%;
 }
 
-/* @media screen and (min-width: 43rem) and (max-width: 62rem) {
+@media screen and (min-width: 43rem) and (max-width: 62rem) {
 	.header::before {
-		background-size: 70px;
+		width: 70px;
 	}
-} */
+	.header__section {
+		flex: 0.5;
+	}
+	.header__image {
+		flex: 0.5;
+	}
+}
 
 @media screen and (max-width: 43rem) {
-	.header {
+	/* .header {
 		flex-direction: column;
-	}
+	} */
 	.header::before {
-		content: none;
+		width: 30px;
+		top: 31.73%;
+	}
+	.header__section {
+		flex: 0.6;
+	}
+	.header__image {
+		flex: 0.4;
 	}
 }
