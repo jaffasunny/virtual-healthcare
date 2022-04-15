@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+:root {
+	--main-bg: #e5e5e5;
+
+	--heading: 3rem;
+	--subheading: 2.25rem;
+	--min-heading: 1.5rem;
+	--text: 1.5rem;
+
+	--primary: #7d7987;
+	--secondary: #1f1534;
+	--blue: #458ff6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+	font-size: clamp(1.75rem, 4vw, var(--heading));
+	/* font-size: var(--heading); */
+}
+h2 {
+	font-size: clamp(1.7rem, 4vw, var(--subheading));
+}
+h3 {
+	font-size: clamp(1.5rem, 4vw, var(--min-heading));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media screen and (min-width: 62rem) {
+	.app {
+		max-width: 80% !important;
+		margin: 0 auto;
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (min-width: 43rem) and (max-width: 62rem) {
+	.app {
+		max-width: 75% !important;
+		margin: 0 auto;
+	}
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 43rem) {
+	.app {
+		max-width: 100% !important;
+		margin: 0 auto;
+	}
+	.app > * {
+		max-width: 90% !important;
+		margin: 0 auto;
+	}
 }
