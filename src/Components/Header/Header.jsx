@@ -11,6 +11,7 @@ const Header = () => {
 					Trafalgar provides progressive, and affordable healthcare, accessible
 					on mobile and online for everyone
 				</p>
+				<button className="header__sectionButton">Consult today</button>
 			</section>
 
 			<div className="header__image">
