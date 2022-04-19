@@ -6,6 +6,10 @@
 	box-shadow: unset !important;
 }
 
+.navbar__pages {
+	text-transform: capitalize !important;
+}
+
 .navbar__logo {
 	display: none;
 }

@@ -11,6 +11,8 @@ import Tracking from "../assets/Tracking.png";
 import VirHealth from "../assets/VirHealth.png";
 import bgVector from "../assets/bg vector.png";
 import pseudoElement from "../assets/pseudoElement.png";
+import section2img from "../assets/trafalgar-illustration sec02 1.png";
+import section3img from "../assets/trafalgar-illustration sec03 1.png";
 
 export default {
 	Logo,
@@ -26,4 +28,6 @@ export default {
 	VirHealth,
 	bgVector,
 	pseudoElement,
+	section2img,
+	section3img,
 };

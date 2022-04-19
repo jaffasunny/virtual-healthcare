@@ -14,7 +14,6 @@
 
 h1 {
 	font-size: clamp(1.75rem, 4vw, var(--heading));
-	/* font-size: var(--heading); */
 }
 h2 {
 	font-size: clamp(1.7rem, 4vw, var(--subheading));

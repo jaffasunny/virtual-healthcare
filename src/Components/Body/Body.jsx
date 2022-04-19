@@ -13,7 +13,9 @@ const Body = () => {
 			<section className="body__services">
 				<div className="body__servicesContent">
 					<h2>Our services</h2>
-					<Divider style={{ width: "5%", borderColor: "black" }} />
+					<Divider
+						style={{ width: "5%", borderColor: "black", borderRadius: "5px" }}
+					/>
 					<p className="body__servicesText">
 						We provide to you the best choiches for you. Adjust it to your
 						health needs and make sure your undergo treatment with our highly
@@ -36,7 +38,59 @@ const Body = () => {
 							text={item.text}
 						/>
 					))}
+
+					<div className="body__servicesCards-buttonDiv">
+						<button>Learn more</button>
+					</div>
 				</div>
+			</section>
+
+			<section className="body__providers">
+				<div className="body__providers-image">
+					<img src={images.section2img} alt="" />
+				</div>
+				<section className="body__providers-contents">
+					<h2>Leading healthcare providers</h2>
+					<Divider
+						style={{
+							width: "15%",
+							borderColor: "black",
+							borderWidth: "2px",
+							borderRadius: "10px",
+							marginBlock: "1.25rem",
+						}}
+					/>
+					<p>
+						Trafalgar provides progressive, and affordable healthcare,
+						accessible on mobile and online for everyone. To us, it’s not just
+						work. We take pride in the solutions we deliver
+					</p>
+					<button>Learn more</button>
+				</section>
+			</section>
+
+			<section className="body__download">
+				<div className="body__download-image">
+					<img src={images.section3img} alt="" />
+				</div>
+				<section className="body__download-contents">
+					<h2>Leading healthcare providers</h2>
+					<Divider
+						style={{
+							width: "15%",
+							borderColor: "black",
+							borderWidth: "2px",
+							borderRadius: "10px",
+							marginBlock: "1.25rem",
+						}}
+					/>
+					<p>
+						Trafalgar provides progressive, and affordable healthcare,
+						accessible on mobile and online for everyone. To us, it’s not just
+						work. We take pride in the solutions we deliver
+					</p>
+					<button>Learn more</button>
+				</section>
 			</section>
 		</div>
 	);

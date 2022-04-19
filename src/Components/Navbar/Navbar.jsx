@@ -15,7 +15,7 @@ import { images } from "../../constants/index";
 import "./Navbar.css";
 
 const Navbar = () => {
-	const pages = ["Products", "Pricing", "Blog"];
+	const pages = ["Home", "Find a doctor", "Apps", "Testimonials", "About us"];
 	const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -98,7 +98,9 @@ const Navbar = () => {
 							}}>
 							{pages.map((page) => (
 								<MenuItem key={page} onClick={handleCloseNavMenu}>
-									<Typography textAlign="center">{page}</Typography>
+									<Typography className="navbar__pages" textAlign="center">
+										{page}
+									</Typography>
 								</MenuItem>
 							))}
 						</Menu>
@@ -115,6 +117,7 @@ const Navbar = () => {
 						className="navbar__links">
 						{pages.map((page) => (
 							<Button
+								className="navbar__pages"
 								key={page}
 								onClick={handleCloseNavMenu}
 								sx={{ my: 2, color: "white", display: "block" }}>

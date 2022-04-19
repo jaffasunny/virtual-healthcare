@@ -2,6 +2,8 @@
 	display: flex;
 	align-items: start;
 	justify-content: center;
+
+	flex-direction: column;
 }
 
 .body__services {
@@ -9,6 +11,8 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+
+	margin-bottom: 10rem !important;
 }
 
 .body__servicesContent {
@@ -63,6 +67,82 @@
 	color: var(--primary);
 
 	text-align: center;
+}
+
+.body__servicesCards-buttonDiv {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.body__services button,
+.body__providers button,
+.body__download button {
+	border: 1.4px solid #458ff6;
+	padding: 0.75rem 2rem;
+	border-radius: 55px;
+	background-color: #fff;
+
+	font-weight: 700;
+	font-size: var(--small-text);
+
+	color: #458ff6;
+	cursor: pointer;
+
+	transition: all 255ms ease-in-out;
+}
+
+.body__services button:hover,
+.body__providers button:hover,
+.body__download button:hover {
+	background-color: #458ff6;
+	color: #fff;
+}
+
+.body__providers,
+.body__download {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 10rem !important;
+}
+
+.body__providers-image,
+.body__download-image {
+	width: max-content;
+}
+
+.body__providers-contents h2,
+.body__download-contents h2 {
+	font-weight: 700;
+	line-height: 3.5rem;
+}
+
+.body__providers-contents p,
+.body__download-contents p {
+	font-size: 1.125rem;
+	line-height: 1.875rem;
+	font-weight: 300;
+
+	color: var(--primary);
+
+	margin-bottom: 2.5rem;
+}
+
+.body__download {
+	flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 62rem) {
+	.body__providers,
+	.body__download {
+		gap: 3rem;
+	}
+}
+
+@media screen and (max-width: 62rem) {
 }
 
 @media screen and (max-width: 43rem) {
