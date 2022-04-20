@@ -2,6 +2,7 @@ import { Divider } from "@mui/material";
 import React from "react";
 import Cards from "../Cards/Cards";
 import cardsData from "./cardsData";
+import Carousels from "../Carousel/Carousel";
 
 import { images } from "../../constants/index";
 
@@ -92,6 +93,8 @@ const Body = () => {
 					<button>Learn more</button>
 				</section>
 			</section>
+
+			<Carousels />
 		</div>
 	);
 };
