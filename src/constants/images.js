@@ -13,21 +13,27 @@ import bgVector from "../assets/bg vector.png";
 import pseudoElement from "../assets/pseudoElement.png";
 import section2img from "../assets/trafalgar-illustration sec02 1.png";
 import section3img from "../assets/trafalgar-illustration sec03 1.png";
+import disease from "../assets/disease.png";
+import herbal from "../assets/herbal.png";
+import natural from "../assets/natural.png";
 
 export default {
-	Logo,
-	LogoSmall,
-	LogoSmallSvg,
-	HeaderIllustration,
-	consultation,
-	DetailsInfo,
-	EmergencyCare,
-	magnifier,
-	onlinePharmacy,
-	Tracking,
-	VirHealth,
-	bgVector,
-	pseudoElement,
-	section2img,
-	section3img,
+  Logo,
+  LogoSmall,
+  LogoSmallSvg,
+  HeaderIllustration,
+  consultation,
+  DetailsInfo,
+  EmergencyCare,
+  magnifier,
+  onlinePharmacy,
+  Tracking,
+  VirHealth,
+  bgVector,
+  pseudoElement,
+  section2img,
+  section3img,
+  disease,
+  herbal,
+  natural,
 };
