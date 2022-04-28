@@ -1,48 +1,78 @@
 :root {
-	--main-bg: #e5e5e5;
+  --main-bg: #e5e5e5;
 
-	--heading: 3rem;
-	--subheading: 2.25rem;
-	--min-heading: 1.5rem;
-	--text: 1.5rem;
-	--small-text: 1.125rem;
+  --heading: 3rem;
+  --subheading: 2.25rem;
+  --min-heading: 1.5rem;
+  --text: 1.5rem;
+  --small-text: 1.125rem;
 
-	--primary: #7d7987;
-	--secondary: #1f1534;
-	--blue: #458ff6;
+  --primary: #7d7987;
+  --secondary: #1f1534;
+  --blue: #458ff6;
 }
 
 h1 {
-	font-size: clamp(1.75rem, 4vw, var(--heading));
+  font-size: clamp(1.75rem, 4vw, var(--heading));
 }
 h2 {
-	font-size: clamp(1.7rem, 4vw, var(--subheading));
+  font-size: clamp(1.7rem, 4vw, var(--subheading));
 }
 h3 {
-	font-size: clamp(1.5rem, 4vw, var(--min-heading));
+  font-size: clamp(1rem, 4vw, var(--min-heading));
+}
+
+.smallText {
+  font-size: clamp(0.75rem, 2vw, var(--small-text));
+}
+
+.app {
+  overflow: hidden;
+}
+
+.app::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+  min-height: 40%;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  z-index: -1;
 }
 
 @media screen and (min-width: 62rem) {
-	.app {
-		max-width: 80% !important;
-		margin: 0 auto;
-	}
+  .app {
+    max-width: 80% !important;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 43rem) and (max-width: 62rem) {
-	.app {
-		max-width: 75% !important;
-		margin: 0 auto;
-	}
+  .app {
+    max-width: 75% !important;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 43rem) {
-	.app {
-		max-width: 100% !important;
-		margin: 0 auto;
-	}
-	.app > * {
-		max-width: 90% !important;
-		margin: 0 auto;
-	}
+  .app {
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+  /* .app > *:not(.footer) {
+    max-width: 90% !important;
+    margin: 0 auto;
+  } */
+  .app > * {
+    max-width: 90% !important;
+    margin: 0 auto;
+  }
+  .app::after {
+    height: 50%;
+  }
+  .footer {
+    height: 50%;
+    align-items: start;
+  }
 }

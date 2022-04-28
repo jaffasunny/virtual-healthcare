@@ -98,7 +98,7 @@ const Body = () => {
 
       <section className='body__latestArticle'>
         <div className='body__latestArticle-title'>
-          <h2>Our services</h2>
+          <h2>Check out our latest article</h2>
           <Divider
             style={{
               width: "5%",
@@ -124,7 +124,7 @@ const Body = () => {
         </div>
 
         <div className='body__latestArticle-buttonDiv'>
-          <button>Learn more</button>
+          <button>View all</button>
         </div>
       </section>
     </div>
